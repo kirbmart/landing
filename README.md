@@ -70,8 +70,6 @@ The application uses a PostgreSQL database with the following schema:
 
 ## Design
 
-The design has been updated from a Moon Juice aesthetic to a modern Arc browser-inspired design:
-
 - **Color Palette**: Modern purple gradient with clean backgrounds
 - **Typography**: Modern sans-serif fonts with gradient text effects for headings
 - **UI Elements**: Updated buttons, cards, and dividers with new styles
