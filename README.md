@@ -1,4 +1,4 @@
-# CURATO - Modern B2B Wholesale Marketplace
+# CURATO - Landing Page - Modern B2B Wholesale Marketplace
 
 CURATO is a modern B2B wholesale marketplace that connects independent retailers with brands/makers. The application features a sleek, Arc browser-inspired design with gradient text, clean backgrounds, and modern UI elements.
 
