@@ -1,0 +1,31 @@
+Welcome to Our Waitlist!
+===============================
+
+Hello<%= @lead.company_name.present? ? " from #{@lead.company_name}" : "" %>,
+
+Thank you for joining our wholesale marketplace waitlist as a <%= @user_type %>. We're excited to have you on board!
+
+<% if @lead.user_type == 'brand' %>
+As a brand, you'll soon be able to:
+- Grow your wholesale business with better commission rates
+- Get paid faster with capital advances
+- Connect with retailers that are perfect for your products
+- Access detailed analytics about your performance
+<% elsif @lead.user_type == 'retailer' %>
+As a retailer, you'll soon be able to:
+- Buy on your terms with flexible payment options
+- Order without minimums across multiple brands
+- Discover products that match your store's unique profile
+- Access seasonal planning tools for better inventory management
+<% end %>
+
+We're working hard to build a platform that reimagines wholesale and creates better connections between brands and retailers. We'll keep you updated on our progress and let you know when we're ready to launch.
+
+If you have any questions in the meantime, feel free to reply to this email.
+
+Best regards,
+The Wholesale Marketplace Team
+
+------------------------------------------
+© <%= Date.today.year %> Your Wholesale Marketplace. All rights reserved.
+This email was sent to <%= @lead.email %> because you signed up for our waitlist.

@@ -1,0 +1,15 @@
+// This file handles the AJAX response for the form submission
+<% if @lead.persisted? %>
+  // Redirect to confirmation page
+  window.location.href = "<%= confirmation_path %>";
+<% else %>
+  // Show error message
+  var errorsContainer = document.querySelector('[data-waitlist-target="errors"]');
+  errorsContainer.textContent = "<%= j @lead.errors.full_messages.join(', ') %>";
+  errorsContainer.classList.remove('hidden');
+  
+  // Reset submit button
+  var submitButton = document.querySelector('[data-waitlist-target="submitButton"]');
+  submitButton.disabled = false;
+  submitButton.value = "Join the Waitlist";
+<% end %>
